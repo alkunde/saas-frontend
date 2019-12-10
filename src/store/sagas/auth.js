@@ -1,4 +1,5 @@
 import { call, put } from 'redux-saga/effects';
+import { push } from 'connected-react-router';
 import { actions as toastrActions } from 'react-redux-toastr';
 import api from '../../services/api';
 
@@ -11,6 +12,8 @@ export function* signIn({ email, password }) {
     localStorage.setItem('@Mobile:token', response.data.token);
 
     yield put(AuthActions.signInSuccess(response.data.token));
+
+    yield put(push('/'));
   } catch (err) {
     yield put(
       toastrActions.add({
