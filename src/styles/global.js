@@ -25,8 +25,4 @@ export default createGlobalStyle`
   input, button {
     font-family: 'Source Sans Pro', sans-serif;
   }
-
-  button {
-    cursor: pointer;
-  }
 `;
