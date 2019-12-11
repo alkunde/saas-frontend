@@ -14,8 +14,8 @@ export default Creators;
 /* Initial State */
 
 export const INITIAL_STATE = Immutable({
-  signedIn: false,
-  token: null,
+  signedIn: !!localStorage.getItem('@Mobile:token'),
+  token: localStorage.getItem('@Mobile:token') || null,
 });
 
 /* Reducers */
