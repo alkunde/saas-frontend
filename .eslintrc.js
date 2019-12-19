@@ -34,6 +34,7 @@ module.exports = {
       { extensions: ['.jsx', '.js'] }
     ],
     'import/prefer-default-export': 'off',
-    'react/static-property-placement': [ 'off' ]
+    'react/static-property-placement': [ 'off' ],
+    'import/no-cycle': 'off'
   },
 };
