@@ -26,7 +26,7 @@ class TeamSwitcher extends Component {
           name: PropTypes.string,
         })
       ),
-      teamModalOpen: PropTypes.element,
+      teamModalOpen: PropTypes.bool,
     }).isRequired,
   };
 
