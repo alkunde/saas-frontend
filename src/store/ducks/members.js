@@ -8,6 +8,7 @@ const { Types, Creators } = createActions({
   getMembersRequest: null,
   getMembersSuccess: ['data'],
   updateMemberRequest: ['id', 'roles'],
+  inviteMemberRequest: ['email'],
 });
 
 export const MembersTypes = Types;
